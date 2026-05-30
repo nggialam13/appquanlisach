@@ -29,6 +29,31 @@ class BookListViewController: UIViewController {
             title: "Flutter cơ bản",
             author: "Phạm Văn B",
             imageName: "book3"
+        ),
+        Book(
+            title: "Flutter cơ bản",
+            author: "Phạm Văn B",
+            imageName: "book3"
+        ),
+        Book(
+            title: "Flutter cơ bản",
+            author: "Phạm Văn B",
+            imageName: "book3"
+        ),
+        Book(
+            title: "Flutter cơ bản",
+            author: "Phạm Văn B",
+            imageName: "book3"
+        ),
+        Book(
+            title: "Flutter cơ bản",
+            author: "Phạm Văn B",
+            imageName: "book3"
+        ),
+        Book(
+            title: "Flutter cơ bản",
+            author: "Phạm Văn B",
+            imageName: "book3"
         )
 
     ]
