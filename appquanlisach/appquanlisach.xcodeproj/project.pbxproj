@@ -6,6 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BF99D6A12FCACD36000EDDE8 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = BF99D6A02FCACD36000EDDE8 /* FirebaseCore */; };
+		BF99D6A52FCACFEC000EDDE8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF99D6A42FCACFEC000EDDE8 /* GoogleService-Info.plist */; };
+		BF99D6B12FCAD343000EDDE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF99D6AE2FCAD343000EDDE8 /* SceneDelegate.swift */; };
+		BF99D6B22FCAD343000EDDE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF99D6A72FCAD343000EDDE8 /* AppDelegate.swift */; };
+		BF99D6B32FCAD343000EDDE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF99D6AF2FCAD343000EDDE8 /* ViewController.swift */; };
+		BF99D6B42FCAD343000EDDE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF99D6AD2FCAD343000EDDE8 /* Main.storyboard */; };
+		BF99D6B52FCAD343000EDDE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF99D6A82FCAD343000EDDE8 /* Assets.xcassets */; };
+		BF99D6B62FCAD343000EDDE8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF99D6A92FCAD343000EDDE8 /* Info.plist */; };
+		BF99D6B72FCAD343000EDDE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF99D6AB2FCAD343000EDDE8 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		BF99D6812FCAC950000EDDE8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,27 +39,17 @@
 		BF99D66A2FCAC94D000EDDE8 /* appquanlisach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appquanlisach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF99D6802FCAC950000EDDE8 /* appquanlisachTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appquanlisachTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF99D68A2FCAC950000EDDE8 /* appquanlisachUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appquanlisachUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF99D6A42FCACFEC000EDDE8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BF99D6A72FCAD343000EDDE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF99D6A82FCAD343000EDDE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF99D6A92FCAD343000EDDE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF99D6AA2FCAD343000EDDE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF99D6AC2FCAD343000EDDE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF99D6AE2FCAD343000EDDE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BF99D6AF2FCAD343000EDDE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		BF99D6922FCAC950000EDDE8 /* Exceptions for "appquanlisach" folder in "appquanlisach" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = BF99D6692FCAC94D000EDDE8 /* appquanlisach */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		BF99D66C2FCAC94D000EDDE8 /* appquanlisach */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				BF99D6922FCAC950000EDDE8 /* Exceptions for "appquanlisach" folder in "appquanlisach" target */,
-			);
-			path = appquanlisach;
-			sourceTree = "<group>";
-		};
 		BF99D6832FCAC950000EDDE8 /* appquanlisachTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = appquanlisachTests;
@@ -65,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF99D6A12FCACD36000EDDE8 /* FirebaseCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,9 +91,11 @@
 		BF99D6612FCAC94D000EDDE8 = {
 			isa = PBXGroup;
 			children = (
-				BF99D66C2FCAC94D000EDDE8 /* appquanlisach */,
+				BF99D6A42FCACFEC000EDDE8 /* GoogleService-Info.plist */,
+				BF99D6B02FCAD343000EDDE8 /* appquanlisach */,
 				BF99D6832FCAC950000EDDE8 /* appquanlisachTests */,
 				BF99D68D2FCAC950000EDDE8 /* appquanlisachUITests */,
+				BF99D69F2FCACD36000EDDE8 /* Frameworks */,
 				BF99D66B2FCAC94D000EDDE8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +108,27 @@
 				BF99D68A2FCAC950000EDDE8 /* appquanlisachUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BF99D69F2FCACD36000EDDE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF99D6B02FCAD343000EDDE8 /* appquanlisach */ = {
+			isa = PBXGroup;
+			children = (
+				BF99D6A72FCAD343000EDDE8 /* AppDelegate.swift */,
+				BF99D6A82FCAD343000EDDE8 /* Assets.xcassets */,
+				BF99D6A92FCAD343000EDDE8 /* Info.plist */,
+				BF99D6AB2FCAD343000EDDE8 /* LaunchScreen.storyboard */,
+				BF99D6AD2FCAD343000EDDE8 /* Main.storyboard */,
+				BF99D6AE2FCAD343000EDDE8 /* SceneDelegate.swift */,
+				BF99D6AF2FCAD343000EDDE8 /* ViewController.swift */,
+			);
+			path = appquanlisach;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,11 +146,9 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				BF99D66C2FCAC94D000EDDE8 /* appquanlisach */,
-			);
 			name = appquanlisach;
 			packageProductDependencies = (
+				BF99D6A02FCACD36000EDDE8 /* FirebaseCore */,
 			);
 			productName = appquanlisach;
 			productReference = BF99D66A2FCAC94D000EDDE8 /* appquanlisach.app */;
@@ -208,6 +232,9 @@
 			);
 			mainGroup = BF99D6612FCAC94D000EDDE8;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				BF99D69E2FCACC80000EDDE8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = BF99D66B2FCAC94D000EDDE8 /* Products */;
 			projectDirPath = "";
@@ -225,6 +252,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF99D6B42FCAD343000EDDE8 /* Main.storyboard in Resources */,
+				BF99D6B52FCAD343000EDDE8 /* Assets.xcassets in Resources */,
+				BF99D6B62FCAD343000EDDE8 /* Info.plist in Resources */,
+				BF99D6B72FCAD343000EDDE8 /* LaunchScreen.storyboard in Resources */,
+				BF99D6A52FCACFEC000EDDE8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +281,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF99D6B12FCAD343000EDDE8 /* SceneDelegate.swift in Sources */,
+				BF99D6B22FCAD343000EDDE8 /* AppDelegate.swift in Sources */,
+				BF99D6B32FCAD343000EDDE8 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +315,25 @@
 			targetProxy = BF99D68B2FCAC950000EDDE8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF99D6AB2FCAD343000EDDE8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF99D6AA2FCAD343000EDDE8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BF99D6AD2FCAD343000EDDE8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF99D6AC2FCAD343000EDDE8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		BF99D6942FCAC950000EDDE8 /* Debug */ = {
@@ -583,6 +637,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BF99D69E2FCACC80000EDDE8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BF99D6A02FCACD36000EDDE8 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BF99D69E2FCACC80000EDDE8 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BF99D6622FCAC94D000EDDE8 /* Project object */;
 }
