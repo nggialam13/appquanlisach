@@ -1,10 +1,10 @@
+////
+////  ViewController.swift
+////  appquanlisach
+////
+////  Created by linda on 30/5/26.
+////
 //
-//  ViewController.swift
-//  appquanlisach
-//
-//  Created by linda on 30/5/26.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -13,7 +13,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+//
+//
 }
-
+//

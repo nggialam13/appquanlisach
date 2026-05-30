@@ -35,6 +35,16 @@
 		BF99D6A42FCACFEC000EDDE8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BF99D6F72FCAD80D000EDDE8 /* Exceptions for "appquanlisach" folder in "appquanlisach" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = BF99D6692FCAC94D000EDDE8 /* appquanlisach */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		BF99D6832FCAC950000EDDE8 /* appquanlisachTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
@@ -48,6 +58,9 @@
 		};
 		BF99D6D92FCAD41E000EDDE8 /* appquanlisach */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BF99D6F72FCAD80D000EDDE8 /* Exceptions for "appquanlisach" folder in "appquanlisach" target */,
+			);
 			path = appquanlisach;
 			sourceTree = "<group>";
 		};
