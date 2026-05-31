@@ -11,5 +11,16 @@ class BookDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+    }
+   
+ 
+    @IBAction func favoriteButtonTapped(_ sender: UIButton) {
+        let favoriteBook = UserDefaults.standard.string(forKey: "favoriteBook")
+
+           print(favoriteBook ?? "Không có dữ liệu")
+        tabBarController?.selectedIndex = 1
     }
 }
+ 
