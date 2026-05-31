@@ -78,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KjR-Kf-1Rg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-494" y="451"/>
+            <point key="canvasLocation" x="-1669" y="1070"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="6gf-jJ-mMc">
@@ -140,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Jj-MV-GAD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="184" y="451"/>
+            <point key="canvasLocation" x="-1008" y="1070"/>
         </scene>
         <!--Book List View Controller-->
         <scene sceneID="95k-B8-TV3">
@@ -439,7 +439,7 @@ từ cơ bản đến nâng cao với ngôn ngữ Swift.</string>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Um4-u4-hKS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-416" y="1215"/>
+            <point key="canvasLocation" x="-341" y="1070"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="s1c-eW-5tf">
@@ -522,7 +522,7 @@ từ cơ bản đến nâng cao với ngôn ngữ Swift.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gCk-SZ-sv0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7" y="2928"/>
+            <point key="canvasLocation" x="1346" y="2125"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Eoz-80-ErZ">
@@ -570,7 +570,7 @@ từ cơ bản đến nâng cao với ngôn ngữ Swift.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lDK-VD-aP8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="715" y="2366"/>
+            <point key="canvasLocation" x="85" y="2125"/>
         </scene>
         <!--Item-->
         <scene sceneID="JOe-Wo-QHL">
@@ -650,7 +650,7 @@ từ cơ bản đến nâng cao với ngôn ngữ Swift.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7lL-tw-rev" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1723" y="2389"/>
+            <point key="canvasLocation" x="715" y="2125"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dyB-cG-KmT">
@@ -765,10 +765,9 @@ từ cơ bản đến nâng cao với ngôn ngữ Swift.</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="l8i-rH-iMp"/>
         <segue reference="Qrq-bL-qVg"/>
-        <segue reference="ckv-lX-n75"/>
-        <segue reference="03p-UT-MBW"/>
+        <segue reference="CCi-tZ-cUB"/>
+        <segue reference="8ia-Xy-saK"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrowshape.backward.fill" catalog="system" width="128" height="104"/>
