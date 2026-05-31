@@ -1,7 +1,7 @@
-//
-//  Login.swift
-//  appquanlisach
-//
-//  Created by linda on 30/5/26.
-//
+import Foundation
+
+struct Login {
+    let email: String
+    let password: String
+}
 

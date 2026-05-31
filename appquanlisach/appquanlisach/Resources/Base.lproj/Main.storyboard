@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01G-Xe-ybG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24765" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xAE-gH-PYj">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24743"/>
@@ -56,6 +56,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Register"/>
                                 <connections>
+                                    <action selector="RegisterButton:" destination="01G-Xe-ybG" eventType="touchUpInside" id="vba-Sd-Djl"/>
                                     <segue destination="BaU-B6-n4k" kind="presentation" modalPresentationStyle="fullScreen" id="b26-9Z-dWu"/>
                                 </connections>
                             </button>
@@ -67,6 +68,8 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="40"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="LoginButton:" destination="01G-Xe-ybG" eventType="touchUpInside" id="aIc-HP-RbV"/>
+                                    <action selector="loginTapped:" destination="01G-Xe-ybG" eventType="touchUpInside" id="YTa-IW-4ER"/>
                                     <segue destination="Mzn-AP-wel" kind="presentation" modalPresentationStyle="fullScreen" id="CCi-tZ-cUB"/>
                                 </connections>
                             </button>
@@ -75,6 +78,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="0bF-A2-Rwm"/>
+                    <connections>
+                        <outlet property="EmailTextField" destination="aBq-uM-Uy5" id="MAz-83-KN1"/>
+                        <outlet property="LoginButton" destination="KiP-BL-f4j" id="hqv-J2-IZN"/>
+                        <outlet property="PassWordTextField" destination="eav-L8-U8W" id="c60-pD-cWb"/>
+                        <outlet property="RegisterButton" destination="GOl-27-Jy9" id="bFN-nc-5z8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KjR-Kf-1Rg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -137,6 +146,13 @@
                         <viewLayoutGuide key="safeArea" id="BPL-0l-JnG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="ConfirmPasswordTextField" destination="ldh-Rp-cRs" id="Man-z9-Noh"/>
+                        <outlet property="EmailTextField" destination="3jE-I1-ZKi" id="YRL-FI-vO7"/>
+                        <outlet property="LoginButton" destination="Z9L-XD-sEF" id="IC3-zJ-rEn"/>
+                        <outlet property="PasswordTextField" destination="yYB-yb-OAw" id="Tp2-5E-DRz"/>
+                        <outlet property="RegisterButton" destination="Q86-Lh-DxV" id="CYu-eh-Zeb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Jj-MV-GAD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -472,47 +488,42 @@ từ cơ bản đến nâng cao với ngôn ngữ Swift.</string>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7N9-xG-4GH">
-                                <rect key="frame" x="31" y="318" width="100" height="100"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book2" translatesAutoresizingMaskIntoConstraints="NO" id="43N-dc-y06">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="D6T-E8-jNy"/>
-                                            <constraint firstAttribute="height" constant="100" id="WVu-lb-iqn"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="BR9-12-yZA"/>
-                                    <constraint firstAttribute="width" constant="100" id="cDw-tR-eBD"/>
-                                </constraints>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BH9-ek-zDy">
-                                <rect key="frame" x="157" y="520" width="78" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BH9-ek-zDy">
+                                <rect key="frame" x="157" y="520" width="79" height="38.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Logout"/>
+                                <connections>
+                                    <segue destination="01G-Xe-ybG" kind="presentation" modalPresentationStyle="fullScreen" id="anw-ou-B8e"/>
+                                </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book2" translatesAutoresizingMaskIntoConstraints="NO" id="70T-Ge-9hE">
+                                <rect key="frame" x="76" y="294" width="241" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="ZWx-kk-QVv"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3Q6-5S-HOu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Fl1-4W-RAG" firstAttribute="leading" secondItem="3Q6-5S-HOu" secondAttribute="leading" constant="116" id="3Wl-mC-73h"/>
+                            <constraint firstItem="70T-Ge-9hE" firstAttribute="leading" secondItem="3Q6-5S-HOu" secondAttribute="leading" constant="76" id="4re-Yk-DyO"/>
                             <constraint firstItem="3Q6-5S-HOu" firstAttribute="top" secondItem="Fl1-4W-RAG" secondAttribute="top" constant="32" id="Bn0-Xv-5ZC"/>
                             <constraint firstItem="ZOX-Yw-m98" firstAttribute="leading" secondItem="3Q6-5S-HOu" secondAttribute="leading" id="E8R-Uh-HZz"/>
-                            <constraint firstItem="43N-dc-y06" firstAttribute="top" secondItem="3Q6-5S-HOu" secondAttribute="top" constant="200" id="IsD-hF-crb"/>
                             <constraint firstItem="ZOX-Yw-m98" firstAttribute="leading" secondItem="3Q6-5S-HOu" secondAttribute="leading" id="Nho-2U-P3T"/>
                             <constraint firstItem="3Q6-5S-HOu" firstAttribute="trailing" secondItem="ZOX-Yw-m98" secondAttribute="trailing" id="RIa-lh-eS2"/>
                             <constraint firstItem="3Q6-5S-HOu" firstAttribute="trailing" secondItem="ZOX-Yw-m98" secondAttribute="trailing" id="SN1-Lh-t54"/>
+                            <constraint firstItem="BH9-ek-zDy" firstAttribute="leading" secondItem="3Q6-5S-HOu" secondAttribute="leading" constant="157" id="UJ1-o5-PpK"/>
                             <constraint firstItem="Fl1-4W-RAG" firstAttribute="centerX" secondItem="3Q6-5S-HOu" secondAttribute="centerX" id="VAQ-jj-isk"/>
                             <constraint firstItem="3Q6-5S-HOu" firstAttribute="top" secondItem="Fl1-4W-RAG" secondAttribute="top" constant="32" id="W10-9N-z3L"/>
                             <constraint firstItem="ZOX-Yw-m98" firstAttribute="leading" secondItem="3Q6-5S-HOu" secondAttribute="leading" id="WxF-97-c3f"/>
+                            <constraint firstItem="70T-Ge-9hE" firstAttribute="top" secondItem="ZOX-Yw-m98" secondAttribute="bottom" constant="50.666666666666686" id="XCD-AC-O5V"/>
+                            <constraint firstItem="BH9-ek-zDy" firstAttribute="top" secondItem="70T-Ge-9hE" secondAttribute="bottom" constant="98" id="b21-gl-xKH"/>
                             <constraint firstItem="ZOX-Yw-m98" firstAttribute="top" secondItem="3Q6-5S-HOu" secondAttribute="top" constant="58" id="bcc-81-6kA"/>
-                            <constraint firstItem="3Q6-5S-HOu" firstAttribute="trailing" secondItem="43N-dc-y06" secondAttribute="trailing" constant="262" id="jFT-9p-xsM"/>
+                            <constraint firstItem="3Q6-5S-HOu" firstAttribute="trailing" secondItem="70T-Ge-9hE" secondAttribute="trailing" constant="76" id="f0g-bK-bZm"/>
+                            <constraint firstItem="3Q6-5S-HOu" firstAttribute="trailing" secondItem="BH9-ek-zDy" secondAttribute="trailing" constant="157" id="gXt-ST-6ZY"/>
                             <constraint firstItem="3Q6-5S-HOu" firstAttribute="trailing" secondItem="Fl1-4W-RAG" secondAttribute="trailing" constant="116" id="jWA-l7-iKt"/>
                             <constraint firstItem="ZOX-Yw-m98" firstAttribute="centerX" secondItem="3Q6-5S-HOu" secondAttribute="centerX" id="mZv-1n-Cxx"/>
-                            <constraint firstItem="43N-dc-y06" firstAttribute="leading" secondItem="3Q6-5S-HOu" secondAttribute="leading" constant="31" id="mdZ-tk-K4l"/>
                             <constraint firstItem="3Q6-5S-HOu" firstAttribute="top" secondItem="Fl1-4W-RAG" secondAttribute="top" constant="32" id="tie-EF-0Yt"/>
                             <constraint firstItem="3Q6-5S-HOu" firstAttribute="trailing" secondItem="ZOX-Yw-m98" secondAttribute="trailing" id="uq0-cm-EDX"/>
                             <constraint firstItem="ZOX-Yw-m98" firstAttribute="top" secondItem="3Q6-5S-HOu" secondAttribute="top" constant="58" id="w3i-xa-RXW"/>
@@ -522,7 +533,7 @@ từ cơ bản đến nâng cao với ngôn ngữ Swift.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gCk-SZ-sv0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1346" y="2125"/>
+            <point key="canvasLocation" x="-1463.3587786259541" y="1936.6197183098593"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Eoz-80-ErZ">
@@ -633,6 +644,10 @@ từ cơ bản đến nâng cao với ngôn ngữ Swift.</string>
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="book2" translatesAutoresizingMaskIntoConstraints="NO" id="p9J-sr-KRe">
+                                <rect key="frame" x="76" y="136" width="240" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Jim-6S-89k"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -650,7 +665,7 @@ từ cơ bản đến nâng cao với ngôn ngữ Swift.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7lL-tw-rev" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="715" y="2125"/>
+            <point key="canvasLocation" x="1273" y="1908"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dyB-cG-KmT">
@@ -767,7 +782,7 @@ từ cơ bản đến nâng cao với ngôn ngữ Swift.</string>
     <inferredMetricsTieBreakers>
         <segue reference="Qrq-bL-qVg"/>
         <segue reference="CCi-tZ-cUB"/>
-        <segue reference="8ia-Xy-saK"/>
+        <segue reference="03p-UT-MBW"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrowshape.backward.fill" catalog="system" width="128" height="104"/>
