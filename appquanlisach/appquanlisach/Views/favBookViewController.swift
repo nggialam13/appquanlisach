@@ -153,7 +153,7 @@ extension favBookViewController {
 
                                                tableView.reloadData()
 
-                                               let successAlert = UIAlertController(
+                                           let successAlert = UIAlertController(
                                                    title: "Thành công",
                                                    message: "Đã xóa khỏi yêu thích",
                                                    preferredStyle: .alert

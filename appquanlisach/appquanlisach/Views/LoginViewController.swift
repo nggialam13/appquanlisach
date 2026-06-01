@@ -1,7 +1,6 @@
-
-
 import UIKit
 import FirebaseAuth
+import FirebaseFirestore
 
 class LoginViewController: UIViewController {
     
@@ -45,15 +44,61 @@ class LoginViewController: UIViewController {
                     return
                 }
 
-                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                guard let uid = result?.user.uid else {
+                    return
+                }
 
-                let tabBarVC = storyboard.instantiateViewController(
-                    withIdentifier: "Tabbarcontroller"
-                )
+                let db = Firestore.firestore()
 
-                tabBarVC.modalPresentationStyle = .fullScreen
+                db.collection("UserS")
+                    .document(uid)
+                    .getDocument { snapshot, error in
 
-                self?.present(tabBarVC, animated: true)
+                        guard let data = snapshot?.data() else {
+
+                            self?.showAlert(
+                                title: "Lỗi",
+                                message: "Không tìm thấy thông tin người dùng"
+                            )
+                            return
+                        }
+
+                        let role = data["role"] as? String ?? "user"
+
+                        let storyboard = UIStoryboard(
+                            name: "Main",
+                            bundle: nil
+                        )
+
+                        if role == "admin" {
+
+                            let adminVC =
+                            storyboard.instantiateViewController(
+                                withIdentifier: "AdminTabBarController"
+                            )
+
+                            adminVC.modalPresentationStyle = .fullScreen
+
+                            self?.present(
+                                adminVC,
+                                animated: true
+                            )
+
+                        } else {
+
+                            let userVC =
+                            storyboard.instantiateViewController(
+                                withIdentifier: "Tabbarcontroller"
+                            )
+
+                            userVC.modalPresentationStyle = .fullScreen
+
+                            self?.present(
+                                userVC,
+                                animated: true
+                            )
+                        }
+                    }
             }
         }
       }
