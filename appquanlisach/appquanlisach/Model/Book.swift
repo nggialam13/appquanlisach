@@ -1,16 +1,11 @@
-//
-//  Book.swift
-//  appquanlisach
-//
-//  Created by linda on 30/5/26.
-//
 import Foundation
 
 struct Book {
-    
+
+    let id: String
     let title: String
-    
     let author: String
-    
-    let imageName: String
+    let description: String
+    let imageUrl: String
+    let favoriteCount: Int
 }

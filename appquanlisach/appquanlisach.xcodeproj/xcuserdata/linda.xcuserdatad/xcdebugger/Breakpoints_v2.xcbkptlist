@@ -7,32 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D43800EC-AB8E-411B-8727-3579BD82D1F1"
-            shouldBeEnabled = "No"
+            uuid = "E76814A9-B9E4-4AF3-A33E-EF7D181858D7"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "appquanlisach/Views/BookListViewController.swift"
+            filePath = "appquanlisach/Views/favBookViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
-            landmarkName = "BookListViewController"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "780CB11C-88FB-43DE-BC4D-DCD032737AC9"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "appquanlisach/Views/BookListViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "11"
-            endingLineNumber = "11"
-            landmarkName = "BookListViewController"
+            startingLineNumber = "9"
+            endingLineNumber = "9"
+            landmarkName = "favBookViewController"
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>

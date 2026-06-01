@@ -1,4 +1,5 @@
 import UIKit
+import FirebaseFirestore
 
 class RegisterViewController: UIViewController {
 
@@ -54,11 +55,11 @@ class RegisterViewController: UIViewController {
 
                 switch result {
 
-                case .success(let user):
+                case .success:
 
                     self?.showAlert(
                         title: "Thành công",
-                        message: "Đăng ký thành công\n\(user.email)"
+                        message: "Đăng ký thành công"
                     )
 
                 case .failure(let error):
@@ -91,5 +92,14 @@ class RegisterViewController: UIViewController {
         )
 
         present(alert, animated: true)
+    }
+    
+    @IBAction func loginTapped(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+
+        let vc = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
+
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
     }
 }

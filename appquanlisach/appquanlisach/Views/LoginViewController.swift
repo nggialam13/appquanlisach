@@ -18,11 +18,12 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("hi???")
+      
         // Do any additional setup after loading the view.
     }
     
     @IBAction func loginTapped(_ sender: UIButton) {
-
+        print("LOGIN BUTTON CLICKED")
           guard let email = EmailTextField.text,
                 let password = PassWordTextField.text,
                 !email.isEmpty,
@@ -32,23 +33,29 @@ class LoginViewController: UIViewController {
               return
           }
 
-          Auth.auth().signIn(withEmail: email, password: password) { [weak self] result, error in
+        Auth.auth().signIn(withEmail: email, password: password) { [weak self] result, error in
 
-              DispatchQueue.main.async {
+            DispatchQueue.main.async {
 
-                  if let error = error {
-                      self?.showAlert(title: "Đăng nhập thất bại",
-                                      message: error.localizedDescription)
-                      return
-                  }
+                if let error = error {
+                    self?.showAlert(
+                        title: "Đăng nhập thất bại",
+                        message: error.localizedDescription
+                    )
+                    return
+                }
 
-                  self?.showAlert(title: "Thành công",
-                                  message: "Đăng nhập thành công")
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
-                  // Chuyển màn hình
-                   self?.performSegue(withIdentifier: "BookListViewController", sender: nil)
-              }
-          }
+                let tabBarVC = storyboard.instantiateViewController(
+                    withIdentifier: "Tabbarcontroller"
+                )
+
+                tabBarVC.modalPresentationStyle = .fullScreen
+
+                self?.present(tabBarVC, animated: true)
+            }
+        }
       }
 
       private func showAlert(title: String, message: String) {
@@ -63,5 +70,14 @@ class LoginViewController: UIViewController {
 
           present(alert, animated: true)
       }
+    
+    @IBAction func registerTapped(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+
+        let vc = storyboard.instantiateViewController(withIdentifier: "RegisterViewController")
+
+        vc.modalPresentationStyle = .fullScreen
+        present(vc, animated: true)
+    }
   }
 
