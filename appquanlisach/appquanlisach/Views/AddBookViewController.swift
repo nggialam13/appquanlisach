@@ -24,6 +24,7 @@ UINavigationControllerDelegate {
         present(alert, animated: true)
     }
     var selectedImage: UIImage?
+    var selectedBook: Book?
     
     
     @IBOutlet weak var bookImageView: UIImageView!
@@ -52,75 +53,63 @@ UINavigationControllerDelegate {
                return
            }
 
-           let db = Firestore.firestore()
+        let db = Firestore.firestore()
 
-           let data: [String: Any] = [
+        let data: [String: Any] = [
+            "title": title,
+            "author": author,
+            "description": descriptionTextView.text ?? "",
+            "imageUrl": "book1",
+            "favoriteCount": 0
+        ]
 
-               "id": UUID().uuidString,
+        if let book = selectedBook {
 
-               "title": title,
+            db.collection("books")
+                .document(book.id)
+                .updateData(data) { error in
 
-               "author": author,
+                    if error == nil {
 
-               "description":
-                   descriptionTextView.text ?? "",
+                        self.navigationController?
+                            .popViewController(animated: true)
+                    }
+                }
 
-               "imageUrl": "book1",
+        } else {
 
-               "favoriteCount": 0
-           ]
+            db.collection("books")
+                .addDocument(data: data) { error in
 
-           db.collection("books")
-               .addDocument(data: data) { error in
+                    if error == nil {
 
-                   if let error = error {
-
-                       self.showAlert(
-                           message: error.localizedDescription
-                       )
-
-                       return
-                   }
-
-                   let alert = UIAlertController(
-                       title: "Thành công",
-                       message: "Đã thêm sách thành công",
-                       preferredStyle: .alert
-                   )
-
-                   alert.addAction(
-                       UIAlertAction(
-                           title: "OK",
-                           style: .default
-                       ) { _ in
-
-                           self.navigationController?
-                               .popViewController(
-                                   animated: true
-                               )
-                       }
-                   )
-
-                   self.present(
-                       alert,
-                       animated: true
-                   )
-               }
+                        self.navigationController?
+                            .popViewController(animated: true)
+                    }
+                }
+        }
     }
 
    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        bookImageView.isUserInteractionEnabled = true
+        if let book = selectedBook {
 
-        let tap = UITapGestureRecognizer(
-            target: self,
-            action: #selector(chooseImage)
-        )
+              titleTextField.text = book.title
+              authorTextField.text = book.author
+              descriptionTextView.text = book.description
+          }
 
-        bookImageView.addGestureRecognizer(tap)
+          bookImageView.isUserInteractionEnabled = true
+
+          let tap = UITapGestureRecognizer(
+              target: self,
+              action: #selector(chooseImage)
+          )
+
+          bookImageView.addGestureRecognizer(tap)
+      
     }
   
 

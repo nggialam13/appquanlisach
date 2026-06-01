@@ -806,6 +806,7 @@ từ cơ bản đến nâng cao với ngôn ngữ Swift.</string>
                                                             <buttonConfiguration key="configuration" style="tinted" title="Sửa"/>
                                                             <connections>
                                                                 <action selector="editButtonTapped:" destination="6uA-9J-5Xb" eventType="touchUpInside" id="9av-DD-1Ws"/>
+                                                                <action selector="editTapped:" destination="ibx-EL-zgg" eventType="touchUpInside" id="WIm-k5-prw"/>
                                                             </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxk-GI-n4d">
@@ -814,6 +815,7 @@ từ cơ bản đến nâng cao với ngôn ngữ Swift.</string>
                                                             <buttonConfiguration key="configuration" style="tinted" title="Xoá"/>
                                                             <connections>
                                                                 <action selector="deleteButtonTapped:" destination="6uA-9J-5Xb" eventType="touchUpInside" id="MAh-xL-OUi"/>
+                                                                <action selector="deleteTapped:" destination="ibx-EL-zgg" eventType="touchUpInside" id="sWk-zI-Aqk"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>

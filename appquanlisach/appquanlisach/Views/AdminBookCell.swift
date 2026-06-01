@@ -14,5 +14,16 @@ class AdminBookCell: UITableViewCell {
     @IBOutlet weak var editButton: UIButton!
 
     @IBOutlet weak var deleteButton: UIButton!
+    
+    var editAction: (() -> Void)?
+      var deleteAction: (() -> Void)?
+
+      @IBAction func editTapped(_ sender: UIButton) {
+          editAction?()
+      }
+
+      @IBAction func deleteTapped(_ sender: UIButton) {
+          deleteAction?()
+      }
 
 }
