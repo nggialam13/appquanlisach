@@ -1,4 +1,5 @@
 import UIKit
+import FirebaseAuth
 import FirebaseFirestore
 
 class RegisterViewController: UIViewController {
@@ -45,7 +46,8 @@ class RegisterViewController: UIViewController {
             )
             return
         }
-
+        
+            
         registerController.register(
             email: email,
             password: password
@@ -61,12 +63,26 @@ class RegisterViewController: UIViewController {
                         title: "Thành công",
                         message: "Đăng ký thành công"
                     )
-
+                    
                 case .failure(let error):
 
+                    let err = error as NSError
+
+                    var ms = error.localizedDescription
+
+                    switch err.code {
+
+                    case AuthErrorCode.emailAlreadyInUse.rawValue:
+
+                        ms = "Email đã tồn tại"
+
+                    default:
+
+                        break
+                    }
                     self?.showAlert(
                         title: "Lỗi",
-                        message: error.localizedDescription
+                        message: ms
                     )
                 }
             }

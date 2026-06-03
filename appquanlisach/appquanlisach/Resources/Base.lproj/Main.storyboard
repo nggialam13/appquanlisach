@@ -550,6 +550,7 @@ từ cơ bản đến nâng cao với ngôn ngữ Swift.</string>
                         <segue destination="Gxc-Hz-jI6" kind="relationship" relationship="viewControllers" id="pgK-9N-A8w"/>
                         <segue destination="q8H-lq-mXK" kind="relationship" relationship="viewControllers" id="uTs-Hw-9cY"/>
                         <segue destination="0w9-fK-mzM" kind="relationship" relationship="viewControllers" id="xcN-PY-HBD"/>
+                        <segue destination="8Oh-61-eh9" kind="relationship" relationship="viewControllers" id="Wod-10-lBJ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Um4-u4-hKS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -638,12 +639,6 @@ từ cơ bản đến nâng cao với ngôn ngữ Swift.</string>
                         <rect key="frame" x="0.0" y="0.0" width="393" height="793"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THÊM / SỬA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqC-8H-zzp">
-                                <rect key="frame" x="85.000000000000014" y="71" width="222.33333333333337" height="48"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZ0-Va-bXW">
                                 <rect key="frame" x="323" y="83" width="54" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -695,6 +690,12 @@ từ cơ bản đến nâng cao với ngôn ngữ Swift.</string>
                                 <rect key="frame" x="76" y="127" width="240" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="THÊM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oqC-8H-zzp">
+                                <rect key="frame" x="140" y="69" width="112.33333333333331" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Jim-6S-89k"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -737,7 +738,32 @@ từ cơ bản đến nâng cao với ngôn ngữ Swift.</string>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fjd-0h-d3O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-618" y="2125"/>
+            <point key="canvasLocation" x="-448" y="1966"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6I3-4n-xN1">
+            <objects>
+                <viewController id="8Oh-61-eh9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="a3D-kT-02b">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HISTORY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5M-wD-u02">
+                                <rect key="frame" x="139" y="66" width="129" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JWV-kp-BSM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="clock.fill" catalog="system" id="mFo-gx-HTN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a0f-Gj-cSe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1048" y="392"/>
         </scene>
         <!--Admin Book List View Controller-->
         <scene sceneID="AL6-Ob-Hbd">
@@ -821,7 +847,7 @@ từ cơ bản đến nâng cao với ngôn ngữ Swift.</string>
                                                     </subviews>
                                                 </stackView>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book1" translatesAutoresizingMaskIntoConstraints="NO" id="Lek-ag-qf3">
-                                                    <rect key="frame" x="0.0" y="0.0" width="152" height="130"/>
+                                                    <rect key="frame" x="20" y="15" width="132" height="115"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -829,11 +855,11 @@ từ cơ bản đến nâng cao với ngôn ngữ Swift.</string>
                                                 <constraint firstItem="U7R-BW-52N" firstAttribute="centerY" secondItem="eDR-aC-n12" secondAttribute="centerY" id="5AL-6L-7Iw"/>
                                                 <constraint firstItem="U7R-BW-52N" firstAttribute="top" secondItem="eDR-aC-n12" secondAttribute="topMargin" constant="19.666666666666657" id="8xN-ic-z5G"/>
                                                 <constraint firstItem="bnI-2C-RfB" firstAttribute="top" secondItem="eDR-aC-n12" secondAttribute="topMargin" id="Mxm-yH-Cgz"/>
-                                                <constraint firstItem="Lek-ag-qf3" firstAttribute="centerY" secondItem="U7R-BW-52N" secondAttribute="centerY" id="Sob-Fg-e0a"/>
+                                                <constraint firstItem="Lek-ag-qf3" firstAttribute="centerY" secondItem="U7R-BW-52N" secondAttribute="centerY" constant="7.5" id="Sob-Fg-e0a"/>
                                                 <constraint firstItem="U7R-BW-52N" firstAttribute="leading" secondItem="Lek-ag-qf3" secondAttribute="trailing" constant="4" id="juD-rL-071"/>
                                                 <constraint firstItem="bnI-2C-RfB" firstAttribute="leading" secondItem="U7R-BW-52N" secondAttribute="trailing" constant="23.333333333333314" id="sgr-5M-4gy"/>
-                                                <constraint firstItem="Lek-ag-qf3" firstAttribute="leading" secondItem="eDR-aC-n12" secondAttribute="leading" id="wEW-4N-gbt"/>
-                                                <constraint firstItem="Lek-ag-qf3" firstAttribute="top" secondItem="eDR-aC-n12" secondAttribute="top" id="xlK-5d-gB1"/>
+                                                <constraint firstItem="Lek-ag-qf3" firstAttribute="leading" secondItem="eDR-aC-n12" secondAttribute="leading" constant="20" id="wEW-4N-gbt"/>
+                                                <constraint firstItem="Lek-ag-qf3" firstAttribute="top" secondItem="eDR-aC-n12" secondAttribute="top" constant="15" id="xlK-5d-gB1"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -877,6 +903,7 @@ từ cơ bản đến nâng cao với ngôn ngữ Swift.</string>
         <image name="book.fill" catalog="system" width="128" height="95"/>
         <image name="book1" width="374" height="512"/>
         <image name="book2" width="374" height="512"/>
+        <image name="clock.fill" catalog="system" width="128" height="123"/>
         <image name="heart.fill" catalog="system" width="128" height="107"/>
         <image name="person.badge.clock.fill" catalog="system" width="128" height="126"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>

@@ -15,6 +15,10 @@ class AdminBookListViewController: UIViewController {
 
         tableView.delegate = self
         tableView.dataSource = self
+        
+        tableView.rowHeight = 180
+            tableView.estimatedRowHeight = 180
+
 
         loadData()
     }
